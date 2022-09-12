@@ -7,11 +7,13 @@ import { MaterialUIModule } from '../material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FeedbackCarouselComponent } from './components/feedback-carousel/feedback-carousel.component';
+import { HichartsComponentComponent } from './components/hicharts-component/hicharts-component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FeedbackCarouselComponent
+    FeedbackCarouselComponent,
+    HichartsComponentComponent
   ],
   imports: [
     BrowserModule,
