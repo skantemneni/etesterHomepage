@@ -1,0 +1,93 @@
+.panelStyle {
+  font-family: tahoma, arial, verdana, sans-serif;
+  font-size: 16px;
+  text-align: left;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border: 3px solid #8E8E8E;
+  color: #333;
+  background-color: white;
+  padding: 5px;
+  margin: 25px;
+  vertical-align: middle;
+  position: relative;
+}
+
+.panelStyle:hover {
+  border-color: #DEDEDE;
+  cursor: pointer;
+}
+
+.panelSize {
+  width: 260px;
+  height: 280px;
+}
+
+.studentlevelTitle {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: #333;
+  letter-spacing: 0.4px;
+  border-bottom: 1px solid #333;
+}
+
+.studentlevelDetails {
+  color: #333;
+  padding-top: 15px;
+  letter-spacing: 0.3px;
+  padding-bottom: 25px;
+  line-height: 22px;
+  transition: opacity 0.8s;
+}
+.hide {
+  opacity: 0%;
+}
+.show {
+  opacity: 100%;
+}
+
+.studentlevelFooter {
+  text-align: right;
+  position: absolute;
+  bottom: 14px;
+  padding-top: 10px;
+  border-top: 1px solid #333;
+  width: calc(100% - 55px);
+}
+
+.padding15 {
+  padding: 15px;
+}
+
+.inlineBlock {
+  display: inline-block;
+}
+
+.inlineField {
+  color: white;
+  background-color: #333;
+  padding: 1px 3px 1px 3px;
+  border-radius: 2px;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.position-absolute-image {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 4%);
+  object-fit: cover;
+  width: 190px;
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 1s;
+}

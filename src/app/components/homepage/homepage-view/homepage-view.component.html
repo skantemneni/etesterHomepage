@@ -1,0 +1,140 @@
+<div #centerPanel class="rf-panel-size-full home-page-banner-image2">
+  <div class="scroll-panel">
+    <div #customScrollPanelChild class="rf-panel-size-700px rf-panel-centered">
+
+      <!-- TOP Panel Banner - with menu, image and motto. With a Background Image (etesterBannerImage) -->
+      <!-- 	    <g:HTMLPanel styleName="{style.header-panel} {resources.css.etesterBannerImage}"> -->
+      <div class="header-panel">
+        <!-- Hover Menu -->
+
+
+  <!-- 			<my:AppNavMenuBarHover ui:field="appNavMenuBarHover"></my:AppNavMenuBarHover> -->
+        <!-- Create the Menu Bar -->
+        <app-menu-bar
+                      #menuBarPanel
+                      [trigger]="'Food'"
+                      [data]="initialData"
+                      [isRootNode]="true">
+        </app-menu-bar>
+
+        <!-- eTester Caption/Motto -->
+        <div class="caption-plus-person">
+
+          <div class="caption-plus-person-component caption-container">
+            <div style="height: 94px;"></div>
+            <div class="caption-text style.caption-text-left">
+              Practice More!
+            </div>
+            <div class="caption-text style.caption-text-center">
+              Achieve More!
+            </div>
+            <div class="caption-text style.caption-text-right">
+              Learn Smart!
+            </div>
+          </div>
+
+          <div class="caption-plus-person-component">
+            <div class="home-page-etester-person">
+              <img src="../../../../assets/images/person.png" />
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Panel Saperator Border -->
+      <div class="panel-separator-border"></div>
+
+      <!-- Animation Box - legacy from the past. Overlays the Banner. -->
+      <div class="cssanimation">
+        <div id="animationbox">Welcome to eTester!</div>
+      </div>
+      <div class="about-us-index">
+        <span class="etesterLinkField" #scrolltoMainSlideshow>
+          Who are we?
+        </span>
+        <span class="etesterLinkField" #scrolltoAvailableCourses>
+          Courses
+        </span>
+        <span class="etesterLinkField" #scrolltoHowTo>
+          How to Register?
+        </span>
+        <span class="etesterLinkField" #scrolltoTestimonials>
+          Testimonials
+        </span>
+      </div>
+
+      <!-- Add a 50 px spacer -->
+      <div style="height:50px;"></div>
+
+
+      <!-- Add the feedback-carousel -->
+      <app-feedback-carousel></app-feedback-carousel>
+
+
+      <div class="lightyellow-panel">
+        <div style="max-width: 1500px; margin:auto;">
+          <!-- Add a 30 px spacer -->
+          <div style="height:30px;"></div>
+          <hr class="section-title-style-hr-green" />
+          <div class="section-title-style-green">Available Courses</div>
+          <hr class="section-title-style-hr-green" />
+          <!-- Center Content Panel. Has to show a static view of some content relevant to the student. -->
+          <app-available-channels-view class="centered rf-panel-size-full"></app-available-channels-view>
+        </div>
+      </div>
+
+
+
+      <!-- Add a 50 px spacer -->
+      <div style="height:50px;"></div>
+
+
+
+
+      <!-- eTester Info Saperator HR -->
+      <!-- Add a 40 px spacer -->
+      <div style="height:40px;"></div>
+      <hr class="with-shadow" />
+
+
+       <app-steps-to-register-widget #stepsToRegisterWidget>  </app-steps-to-register-widget>
+
+
+
+
+
+
+
+
+      <!-- eTester Info Saperator HR -->
+      <!-- Add a 40 px spacer -->
+      <div style="height:40px;"></div>
+      <hr class="{style.with-shadow}" />
+
+      <div #testimonials class="lightgrey-panel">
+        <!-- Add a 30 px spacer -->
+        <div style="height:30px;"></div>
+        <hr class="section-title-style-hr-blue" />
+        <div class="section-title-style-blue">Testimonials</div>
+        <hr class="section-title-style-hr-blue" />
+
+
+
+        <app-testimonial-slider></app-testimonial-slider>
+
+
+        <!-- Add a 30 px spacer -->
+        <div style="height:30px;"></div>
+
+      </div>
+
+
+
+
+      <h2>Highcharts example</h2>
+      <app-hicharts-component></app-hicharts-component>
+    </div>
+  </div>
+</div>

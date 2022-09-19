@@ -1,0 +1,7 @@
+<div *ngIf="channels">
+  <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+    <div *ngFor="let channel of channels; let index = index;">
+      <app-available-channel-widget [channel]="channel"></app-available-channel-widget>
+    </div>
+  </div>
+</div>

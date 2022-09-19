@@ -1,0 +1,115 @@
+.float-right {
+  float: right;
+  margin-right: 5px;
+}
+
+.float-left {
+  float: left;
+}
+
+.clearboth {
+  clear: both;
+}
+
+.margin-top-minus25 {
+  margin-top: -25px;
+}
+
+.margin-top10 {
+  margin-top: 10px;
+}
+
+.registerNewUserLink {
+  color: #1c2e5f;
+  background-color: orange;
+  opacity: 0.9;
+  border-radius: 3px;
+  display: inline-block;
+  padding-left: 3px;
+  padding-right: 3px;
+  cursor: pointer;
+}
+
+.registerNewUserLink:hover {
+  color: #ffffff;
+  background-color: #1c2e5f;
+  border-radius: 2px;
+}
+
+.margin-left5 {
+  margin-left: 5px;
+}
+
+.login-button {
+  background: #CC6600;
+  background: literal("-moz-linear-gradient(#CC6600, #ff9900)");
+  background-image: literal("-webkit-gradient(linear, left top, left bottom, from(#CC6600), to(#ff9900))");
+  background: literal("-webkit-linear-gradient(#CC6600, #ff9900)");
+  background: literal("-o-linear-gradient(#CC6600, #ff9900)");
+  background: literal("-ms-linear-gradient(#CC6600, ##ff9900111)");
+  background: literal("linear-gradient(#CC6600, #ff9900)");
+  float: left;
+  padding: 12px 15px;
+  color: black;
+  text-transform: uppercase;
+  font: bold 12px Arial, Helvetica;
+  text-decoration: none;
+  border-left: 1px solid;
+  -moz-border-radius: 0px 6px 6px 0px;
+  -webkit-border-radius: 0px 6px 6px 0px;
+  -o-border-radius: 0px 6px 6px 0px;
+  border-radius: 0px 6px 6px 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 180px;
+  text-align: center;
+}
+
+.login-button:hover {
+  background-color: #0186ba;
+  background-image: literal("-moz-linear-gradient(#04acec,  #0186ba)");
+  background-image: literal("-webkit-gradient(linear, left top, left bottom, from(#04acec), to(#0186ba))");
+  background-image: literal("-webkit-linear-gradient(#04acec, #0186ba)");
+  background-image: literal("-o-linear-gradient(#04acec, #0186ba)");
+  background-image: literal("-ms-linear-gradient(#04acec, #0186ba)");
+  background-image: literal("linear-gradient(#04acec, #0186ba)");
+  color: #fff;
+}
+
+.logoStyleName {
+  width: 180px;
+  height: 67px;
+  max-height: 100%;
+  max-width: 100%;
+  background-size: contain;
+  float: left;
+  display: inline-block;
+  /*	-webkit-box-shadow: 0px 0px 15px 10px white; */
+  /*	-moz-box-shadow: 0px 0px 15px 10px white; */
+  /*	box-shadow: 0px 0px 15px 10px white; */
+  /*	background-color: white; */
+  border-radius: 5px;
+  margin-right: 25px;
+  padding-left: 10px;
+  /*	padding-top: 5px; */
+}
+
+.logoStyleNameShort {
+  height: 40px;
+  background-size: contain;
+  float: left;
+  display: inline-block;
+  -webkit-box-shadow: 0px 0px 15px 10px white;
+  -moz-box-shadow: 0px 0px 15px 10px white;
+  box-shadow: 0px 0px 15px 10px white;
+  background-color: white;
+  border-radius: 10px;
+  margin-right: 15px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.messagesIcon {
+  width: 48px;
+  height: 38px;
+}

@@ -1,0 +1,17 @@
+<div *ngIf="channel">
+  <div class="inlineBlock panelStyle" (mouseover)="hasFocus=true" (mouseout)="hasFocus=false">
+    <div class="padding15 panelSize">
+      <div class="studentlevelTitle">{{channel.name}}</div>
+      <div class="position-relative">
+        <img class="position-absolute-image" [src]="channel.imageUrl" [ngStyle]="{'opacity':hasFocus ? '0%' : '100%' }">
+        <div class="position-absolute studentlevelDetails" [ngStyle]="{'opacity':hasFocus ? '100%' : '0%' }">
+          <div>{{channel.description}}</div>
+          <div style="margin-top: 10px; line-height: 24px;">Lessons: <span class="inlineField">{{channel.lessonCount}}</span></div>
+          <div style="line-height: 24px;">Tests: <span class="inlineField">{{channel.testCount}}</span></div>
+          <div style="line-height: 24px;">Assessments: <span class="inlineField">{{channel.assessmentCount}}</span></div>
+        </div>
+      </div>
+      <div class="studentlevelFooter"><span class="inlineField">{{channel.subscriberCount}}</span> Subscribers.</div>
+    </div>
+  </div>
+</div>

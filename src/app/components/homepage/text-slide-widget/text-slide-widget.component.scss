@@ -1,0 +1,40 @@
+.datatag-div {
+  font-family: Verdana, sans-serif;
+  font-size: 18px;
+  text-align: left;
+  color: #A55200;
+  background-color: lightgrey;
+  width: 100%;
+  min-height: 300px;
+  text-align: center;
+  opacity: 0.93;
+}
+
+.slide-heading {
+  width: 90%;
+  margin: 0 auto;
+  padding: 24px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #A55200;
+  border-bottom: 1px solid #f90;
+}
+
+.slide-textlistPanel {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 15px;
+  font-size: 18px;
+  text-align: center;
+  color: #A55200;
+  line-height: 26px;
+}
+
+.slide-salutation {
+  text-align: right;
+  position: absolute;
+  bottom: 14px;
+  padding-top: 10px;
+  width: literal("calc(100% - 55px)");
+}

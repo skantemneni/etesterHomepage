@@ -1,0 +1,39 @@
+img.title-style2 {
+  background-color: white;
+  display: block;
+  margin: auto;
+  box-shadow: 0 0 15px 10px white;
+}
+
+.section-title-style-orange {
+  color: #A55200;
+  display: block;
+  margin: auto;
+  width: 500px;
+  text-align: center;
+  padding-bottom: 5px;
+  font-family: tahoma, arial, verdana, sans-serif;
+  font-size: 42px;
+  font-weight: normal;
+  opacity: 1;
+}
+
+.section-title-style-hr-orange {
+  border: 0;
+  height: 4px;
+  width: 800px;
+  margin: auto;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #A55200, rgba(0, 0, 0, 0));
+}
+
+.section-panel-style {
+  margin: 0 auto;
+  max-width: 1011px;
+  background-color: azure;
+  padding: 20px;
+}
+
+.azure-panel {
+  background-color: azure;
+  opacity: 0.9;
+}

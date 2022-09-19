@@ -1,0 +1,4 @@
+<div class="tcell" (mouseover)="hasFocus=true" (mouseout)="hasFocus=false" [ngStyle]="{'border-color':hasFocus ? stepDetails.activeColor : stepDetails.passiveColor }">
+  <span [innerHTML]="stepDetails.captionHTML" class="caption" [ngStyle]="{'display':hasFocus ? 'none' : 'block' }"></span>
+  <span [innerHTML]="stepDetails.detailHTML" class="detail" [ngStyle]="{'display':hasFocus ? 'block' : 'none' }"></span>
+</div>

@@ -1,0 +1,6 @@
+<ngb-carousel *ngIf="testimonials">
+  <ng-template *ngFor="let testimonial of testimonials; let index = index;" ngbSlide>
+    <app-text-slide-widget [testimonial]="testimonial"></app-text-slide-widget>
+  </ng-template>
+
+</ngb-carousel>
