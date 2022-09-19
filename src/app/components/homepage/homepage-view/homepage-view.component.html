@@ -1,4 +1,10 @@
 <div #centerPanel class="rf-panel-size-full home-page-banner-image2">
+
+  <app-nav-menu-bar-full #menuBarPanel>
+  </app-nav-menu-bar-full>
+
+
+
   <div class="scroll-panel">
     <div #customScrollPanelChild class="rf-panel-size-700px rf-panel-centered">
 
@@ -6,17 +12,14 @@
       <!-- 	    <g:HTMLPanel styleName="{style.header-panel} {resources.css.etesterBannerImage}"> -->
       <div class="header-panel">
         <!-- Hover Menu -->
-
-
-  <!-- 			<my:AppNavMenuBarHover ui:field="appNavMenuBarHover"></my:AppNavMenuBarHover> -->
+        <!-- 			<my:AppNavMenuBarHover ui:field="appNavMenuBarHover"></my:AppNavMenuBarHover> -->
         <!-- Create the Menu Bar -->
-        <app-menu-bar
-                      #menuBarPanel
-                      [trigger]="'Food'"
-                      [data]="initialData"
-                      [isRootNode]="true">
-        </app-menu-bar>
-
+        <!--        <app-menu-bar #menuBarPanel
+                              [trigger]="'Food'"
+                              [data]="initialData"
+                              [isRootNode]="true">
+                </app-menu-bar>
+        -->
         <!-- eTester Caption/Motto -->
         <div class="caption-plus-person">
 
@@ -99,7 +102,7 @@
       <hr class="with-shadow" />
 
 
-       <app-steps-to-register-widget #stepsToRegisterWidget>  </app-steps-to-register-widget>
+      <app-steps-to-register-widget #stepsToRegisterWidget>  </app-steps-to-register-widget>
 
 
 

@@ -2,7 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { DynamicDatabase } from '../../../services/DynamicDatabase';
 
 /**
- * Example from "https://indepth.dev/tutorials/angular/angular-material-nested-menu-dynamic-data"
+ * Example from "https://indepth.dev/tutorials/angular/angular-material-nested-menu-dynamic-data
  */
 @Component({
   selector: 'app-menu-bar',

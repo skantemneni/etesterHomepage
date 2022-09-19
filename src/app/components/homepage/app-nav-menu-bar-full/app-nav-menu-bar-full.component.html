@@ -1,4 +1,25 @@
-<button mat-button [matMenuTriggerFor]="animals">Animal index</button>
+<mat-toolbar>
+
+    <img
+         src="../../../../assets/images/etesterLogo.gif"
+         style="max-height: 100%;"
+         onclick="alert('Hi There!')" />
+
+    <div>
+      <button mat-button [matMenuTriggerFor]="menu" color="primary">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <button mat-button [matMenuTriggerFor]="animals" color="primary">
+        Animal index
+      </button>
+    </div>
+</mat-toolbar>
+
+<mat-menu #menu="matMenu">
+  <span>aPHrodite</span>
+  <span class="spacer"></span>
+</mat-menu>
+
 
 <mat-menu #animals="matMenu">
   <button mat-menu-item [matMenuTriggerFor]="vertebrates">Vertebrates</button>
