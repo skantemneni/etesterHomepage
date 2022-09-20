@@ -1,46 +1,201 @@
 <mat-toolbar>
 
-    <img
-         src="../../../../assets/images/etesterLogo.gif"
+  <div class="logo-div">
+
+    <img src="../../../../assets/images/etesterLogo.gif"
          style="max-height: 100%;"
          onclick="alert('Hi There!')" />
 
-    <div>
-      <button mat-button [matMenuTriggerFor]="menu" color="primary">
-        <mat-icon>menu</mat-icon>
-      </button>
-      <button mat-button [matMenuTriggerFor]="animals" color="primary">
-        Animal index
-      </button>
-    </div>
+    <button mat-button color="primary">
+      <mat-icon>arrow_back</mat-icon>
+      <span style="padding-left: 5px;">Back</span>
+    </button>
+
+  </div>
+
+  <div>
+    <button mat-button [matMenuTriggerFor]="adminMainMenu" color="primary">
+      Admin Zone
+    </button>
+    <button mat-button [matMenuTriggerFor]="myZoneMainMenu" color="primary">
+      My Zone
+    </button>
+    <button mat-button [matMenuTriggerFor]="mySubscriptionsMainMenu" color="primary">
+      Subscriptions
+    </button>
+    <button mat-button [matMenuTriggerFor]="providerZoneMainMenu" color="primary">
+      Provider Zone
+    </button>
+    <button mat-button [matMenuTriggerFor]="mockExamsMainMenu" color="primary">
+      Mock Exams
+    </button>
+  </div>
+
+  <div>
+    <button mat-raised-button color="primary">
+      About Us
+    </button>
+  </div>
+
 </mat-toolbar>
 
-<mat-menu #menu="matMenu">
-  <span>aPHrodite</span>
-  <span class="spacer"></span>
+<mat-menu #adminMainMenu="matMenu">
+  <div mat-menu-item color="primary">
+    Practice Content Overlay
+  </div>
+  <button mat-menu-item [matMenuTriggerFor]="serverCacheManagement" color="primary">
+    Server Cache Management
+  </button>
+  <button mat-menu-item [matMenuTriggerFor]="alertManagement" color="primary">
+    Manage Alerts
+  </button>
+  <button mat-menu-item [matMenuTriggerFor]="studentAdministration" color="primary">
+    Student Administration
+  </button>
+</mat-menu>
+
+<mat-menu #serverCacheManagement="matMenu">
+  <button mat-menu-item color="primary">
+    Delete Test Cache
+  </button>
+  <button mat-menu-item color="primary">
+    Delete Section Cache
+  </button>
+  <button mat-menu-item color="primary">
+    Delete All Cache
+  </button>
+  <button mat-menu-item color="primary">
+    Disable Cache (2 Hours)
+  </button>
+</mat-menu>
+
+<mat-menu #alertManagement="matMenu">
+  <button mat-menu-item color="primary">
+    User Alerts
+  </button>
+  <button mat-menu-item color="primary">
+    Channel Alerts
+  </button>
+</mat-menu>
+
+<mat-menu #studentAdministration="matMenu">
+  <button mat-menu-item color="primary">
+    Student Reports
+  </button>
+</mat-menu>
+
+<mat-menu #myZoneMainMenu="matMenu">
+  <button mat-menu-item color="primary">
+    My Assignments
+  </button>
+  <button mat-menu-item color="primary">
+    My Tests
+  </button>
+  <button mat-menu-item color="primary">
+    My Corrections
+  </button>
+  <button mat-menu-item color="primary">
+    My Reports
+  </button>
+  <button mat-menu-item color="primary">
+    My Review Topics
+  </button>
+</mat-menu>
+
+<mat-menu #mySubscriptionsMainMenu="matMenu">
+  <button mat-menu-item color="primary">
+    New Channels...
+  </button>
+  <button mat-menu-item color="primary">
+    $$$ Dynamic Subscription List $$$
+  </button>
+</mat-menu>
+
+<!-- Provider Zone Manu -->
+<mat-menu #providerZoneMainMenu="matMenu">
+  <button mat-menu-item [matMenuTriggerFor]="providerReviewContent" color="primary">
+    Review Content
+  </button>
+  <button mat-menu-item [matMenuTriggerFor]="providerManageAssignments" color="primary">
+    Manage Assignments
+  </button>
+  <button mat-menu-item [matMenuTriggerFor]="providerManageStudents" color="primary">
+    Manage Students
+  </button>
+  <button mat-menu-item [matMenuTriggerFor]="providerAdministrator" color="primary">
+    Administrator
+  </button>
+</mat-menu>
+
+<mat-menu #providerReviewContent="matMenu">
+  <button mat-menu-item color="primary">
+    All Channels...
+  </button>
+  <button mat-menu-item color="primary">
+    $$$ Dynamic Channel List $$$
+  </button>
+</mat-menu>
+
+<mat-menu #providerManageAssignments="matMenu">
+  <button mat-menu-item color="primary">
+    Homework Assignments
+  </button>
+  <button mat-menu-item color="primary">
+    Tests
+  </button>
+  <button mat-menu-item color="primary">
+    Quizzes
+  </button>
+  <button mat-menu-item color="primary">
+    Challenges
+  </button>
+</mat-menu>
+
+<mat-menu #providerManageStudents="matMenu">
+  <button mat-menu-item color="primary">
+    Assign Homework
+  </button>
+  <button mat-menu-item color="primary">
+    Grade Homework
+  </button>
+  <button mat-menu-item color="primary">
+    Student Reports
+  </button>
+</mat-menu>
+
+<mat-menu #providerAdministrator="matMenu">
+  <button mat-menu-item color="primary">
+    Organize Students
+  </button>
+  <button mat-menu-item color="primary">
+    Manage Student Profiles
+  </button>
+  <button mat-menu-item color="primary">
+    Assign Student Profiles
+  </button>
 </mat-menu>
 
 
-<mat-menu #animals="matMenu">
-  <button mat-menu-item [matMenuTriggerFor]="vertebrates">Vertebrates</button>
+<!-- Mock Exams-->
+<mat-menu #mockExamsMainMenu="matMenu">
+  <button mat-menu-item [matMenuTriggerFor]="eamcetMockExams" color="primary">EAMCET Exam</button>
+  <button mat-menu-item [matMenuTriggerFor]="iitMockExams" color="primary">IIT Exam</button>
+  <button mat-menu-item [matMenuTriggerFor]="bitsatMockExams" color="primary">BITSAT Exam</button>
+  <button mat-menu-item color="primary">Common Admission Test (CAT)</button>
+  <button mat-menu-item color="primary">CA Common Proficiency Test (CPT)</button>
+  <button mat-menu-item [matMenuTriggerFor]="bankMockExams" color="primary">Bank Exam</button>
 </mat-menu>
-
-<mat-menu #vertebrates="matMenu">
-  <button mat-menu-item [matMenuTriggerFor]="fish">Fishes</button>
-  <button mat-menu-item>Amphibians</button>
-  <button mat-menu-item>Reptiles</button>
-  <button mat-menu-item [matMenuTriggerFor]="birds">Birds</button>
-  <button mat-menu-item>Mammals</button>
+<mat-menu #eamcetMockExams="matMenu">
+  <button mat-menu-item>Engineering Track</button>
+  <button mat-menu-item>Medical Track</button>
 </mat-menu>
-
-<mat-menu #fish="matMenu">
-  <button mat-menu-item>Baikal oilfish</button>
-  <button mat-menu-item>Bala shark</button>
-  <button mat-menu-item>Ballan wrasse</button>
-  <button mat-menu-item>Bamboo shark</button>
-  <button mat-menu-item>Banded killifish</button>
+<mat-menu #iitMockExams="matMenu">
+  <button mat-menu-item>IIT Engineering Track</button>
 </mat-menu>
-
-<mat-menu #birds="matMenu">
-  <div class="mat-menu-item">none</div>
+<mat-menu #bitsatMockExams="matMenu">
+  <button mat-menu-item>BITSAT Engineering Track</button>
+</mat-menu>
+<mat-menu #bankMockExams="matMenu">
+  <button mat-menu-item>Bank PO Track</button>
+  <button mat-menu-item>Bank Clerk Track</button>
 </mat-menu>
